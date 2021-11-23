@@ -1,0 +1,86 @@
+
+.order h1{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.order{
+   
+    margin: 5rem;
+  text-align: center;
+
+}
+.order form .inputBox .input{
+    width:30%;
+   
+    
+}
+.order form .inputBox .input span{
+    display:block;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    
+}
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+  
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:100%;
+}
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
+    border:.1rem solid var(--green);
+}
+.order form .inputBox .input textarea{
+    height:20rem;
+    resize: none;
+}
+.order form .btn{
+    margin-top: 0;
+}
+.account{
+   
+    margin: 10rem;
+    
+    text-align: center;
+
+}
+.institution{
+   
+    margin: 10rem;
+    
+    text-align: center;
+
+}
+.transfer{
+   
+    margin: 10rem;
+    
+    text-align: center;
+
+}
+
+
+
+input[type="Submit"]{
+    color: white;
+    background-color: rgb(7, 110, 158);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5rem;
+}
+input[type="Submit"]:hover{
+    background-color: rgb(94, 106, 110);
+}
+.usermargin{
+    margin: 10rem;
+}
