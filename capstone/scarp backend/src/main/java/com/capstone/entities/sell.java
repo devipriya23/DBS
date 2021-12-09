@@ -4,16 +4,13 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name="history")
-public class history {
+@Table(name="sell")
+public class sell {
 
-	
 	@Id
-	@Column(name = "historyid")
+	@Column(name = "sellid")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int historyid;
-	@Column(name = "transactiontype")
-	private String transactiontype;
+	private int sellid;
 	@Column(name = "clientid")
 	private String clientid;
 	@Column(name = "instrumentid")
@@ -22,26 +19,13 @@ public class history {
 	private String price;
 	@Column(name = "quantity")
 	private String quantity;
-	@Column(name = "custodianid")
-	private String custodianid;
-	
-	public String getCustodianid() {
-		return custodianid;
+	@Column(name = "stats")
+	private String stats;
+	public int getSellid() {
+		return sellid;
 	}
-	public void setCustodianid(String custodianid) {
-		this.custodianid = custodianid;
-	}
-	public int getHistoryid() {
-		return historyid;
-	}
-	public void setHistoryid(int historyid) {
-		this.historyid = historyid;
-	}
-	public String getTransactiontype() {
-		return transactiontype;
-	}
-	public void setTransactiontype(String transactiontype) {
-		this.transactiontype = transactiontype;
+	public void setSellid(int sellid) {
+		this.sellid = sellid;
 	}
 	public String getClientid() {
 		return clientid;
@@ -66,6 +50,12 @@ public class history {
 	}
 	public void setQuantity(String quantity) {
 		this.quantity = quantity;
+	}
+	public String getStats() {
+		return stats;
+	}
+	public void setStats(String stats) {
+		this.stats = stats;
 	}
 	
 }

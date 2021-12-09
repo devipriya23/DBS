@@ -2,18 +2,13 @@ package com.capstone.entities;
 
 import javax.persistence.*;
 
-
 @Entity
-@Table(name="history")
-public class history {
-
-	
+@Table(name="buy")
+public class buy {
 	@Id
-	@Column(name = "historyid")
+	@Column(name = "buyid")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int historyid;
-	@Column(name = "transactiontype")
-	private String transactiontype;
+	private int buyid;
 	@Column(name = "clientid")
 	private String clientid;
 	@Column(name = "instrumentid")
@@ -22,26 +17,13 @@ public class history {
 	private String price;
 	@Column(name = "quantity")
 	private String quantity;
-	@Column(name = "custodianid")
-	private String custodianid;
-	
-	public String getCustodianid() {
-		return custodianid;
+	@Column(name = "stats")
+	private String stats;
+	public int getBuyid() {
+		return buyid;
 	}
-	public void setCustodianid(String custodianid) {
-		this.custodianid = custodianid;
-	}
-	public int getHistoryid() {
-		return historyid;
-	}
-	public void setHistoryid(int historyid) {
-		this.historyid = historyid;
-	}
-	public String getTransactiontype() {
-		return transactiontype;
-	}
-	public void setTransactiontype(String transactiontype) {
-		this.transactiontype = transactiontype;
+	public void setBuyid(int buyid) {
+		this.buyid = buyid;
 	}
 	public String getClientid() {
 		return clientid;
@@ -67,5 +49,12 @@ public class history {
 	public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
+	public String getStats() {
+		return stats;
+	}
+	public void setStats(String stats) {
+		this.stats = stats;
+	}
 	
+
 }

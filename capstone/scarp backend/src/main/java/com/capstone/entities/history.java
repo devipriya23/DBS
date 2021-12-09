@@ -22,15 +22,6 @@ public class history {
 	private String price;
 	@Column(name = "quantity")
 	private String quantity;
-	@Column(name = "custodianid")
-	private String custodianid;
-	
-	public String getCustodianid() {
-		return custodianid;
-	}
-	public void setCustodianid(String custodianid) {
-		this.custodianid = custodianid;
-	}
 	public int getHistoryid() {
 		return historyid;
 	}
